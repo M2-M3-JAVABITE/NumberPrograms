@@ -5,13 +5,13 @@ class Armstrong_No
     { 
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number");
-        int n=sc.nextInt();
-        int copy=n,s=0;
-        while(n!=0)
+        int n1=sc.nextInt();
+        int copy=n1,s=0;
+        while(n1!=0)
         {
-            int d=n%10;
+            int d=n1%10;
             s=s+(d*d*d);
-            n=n/10;
+            n1=n1/10;
         }
         if(copy==s)
             System.out.println("Armstrong Number");
